@@ -1,7 +1,6 @@
 package nShortURL
 
 import (
-	"fmt"
 	"main/aws/ssm"
 )
 
@@ -26,8 +25,5 @@ func InitNShortURL() error {
 	}
 	NShortURLClientID = info[0]
 	NShortURLSecretKey = info[1]
-	fmt.Println("네이버 id,key 초기화 완료")
-	fmt.Println(NShortURLClientID)
-	fmt.Println(NShortURLSecretKey)
 	return nil
 }
